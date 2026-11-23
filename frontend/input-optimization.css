@@ -1,0 +1,21 @@
+/* 입력 섹션 최적화 - 가로 공간 효율적 사용 */
+
+/* 입력 방식과 공고 유형을 한 줄에 */
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* 게시일시와 버튼을 효율적으로 배치 */
+.compact-form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+/* 모바일에서는 세로 배치 */
+@media (max-width: 768px) {
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+}
